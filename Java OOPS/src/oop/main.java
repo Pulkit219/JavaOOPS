@@ -10,6 +10,7 @@ public class main {
 		Vehicle vehicle2 =new Vehicle("Porsche", "white");
 		System.out.println(vehicle1.color);
 		System.out.println(vehicle2.color);
+		System.out.println(Vehicle.getdata());
 	}
 
 }
