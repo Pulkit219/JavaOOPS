@@ -2,8 +2,9 @@ package oop;
 
 public class Vehicle {
 
-	public String color;
-	public String name;
+	private String color;
+	private String name;
+	public static int i =0;
 	
 	
 	 public Vehicle(String name, String color){
