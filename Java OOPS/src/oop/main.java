@@ -15,6 +15,15 @@ public class main {
 		System.out.println(Vehicle.getdata());
 		//use of static variable, which can be accessible without the use of any object 
 		System.out.println(Vehicle.i);
+		//car class object creation
+		Car car1 = new Car("ferari" , "blue", true , false );
+		car1.setLedScreen(true);
+		
+		System.out.println(car1.getLedScreen());
+		//by dafault its is calling the overwritten method
+	System.out.println(car1.getName());
+		
+		
 	}
 
 }
