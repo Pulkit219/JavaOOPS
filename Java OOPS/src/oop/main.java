@@ -17,12 +17,13 @@ public class main {
 		System.out.println(Vehicle.i);
 		//car class object creation
 		Car car1 = new Car("ferari" , "blue", true , false );
+		Bike bike1 = new Bike("ninja", "red");
 		car1.setLedScreen(true);
 		
 		System.out.println(car1.getLedScreen());
-		//by dafault its is calling the overwritten method
+		//by default its is calling the overwritten method
 	System.out.println(car1.getName());
-		
+		System.out.println(bike1.getSum(4, 6));
 		
 	}
 
