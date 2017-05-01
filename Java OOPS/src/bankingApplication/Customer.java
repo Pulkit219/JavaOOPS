@@ -2,8 +2,8 @@ package bankingApplication;
 
 public class Customer {
 
-	String name;
-	Account account;
+	private String name;
+	private Account account;
 	
 	public void getName(){
 		
