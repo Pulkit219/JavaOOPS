@@ -4,7 +4,7 @@ public class Account {
 
 private	double balance =0;
 private	String  accountNumber ;
-private boolean firstTime =true;
+public boolean firstTime =true;
 
 	
 public Account(String accnum, double bal){
@@ -33,7 +33,7 @@ this.accountNumber =accnum;
 	}
 	
 public void withdraw(double sum){
-	if(sum <= this.balance -100){
+	if(sum <= this.balance -(100 + Bank.transactionFees)){
 		
 		if(firstTime){
 			this.balance-= sum;
@@ -44,6 +44,7 @@ public void withdraw(double sum){
 		
 		else{
 			this.balance-=(sum + Bank.transactionFees);
+			System.out.println(sum + "withdrwan success, transaction fees charged");
 			
 		}
 		
@@ -51,7 +52,7 @@ public void withdraw(double sum){
 	}
 	
 	else{
-		System.out.println("negative, cannot withdraw account must have at least 100");
+		System.out.println("must have at least 100 with transaction fees");
 	}
 		
 	}
