@@ -4,18 +4,18 @@ public class Main {
 
 	public static void main(String[] args) {
 	
-		Account pulkit = new Account("p123", 100);
+		Account ac1 = new Account("p123", 100);
 		
 		
-		pulkit.deposit(2000);
+		ac1.deposit(2000);
 		
 		
 		
-		pulkit.withdraw(100);
+		ac1.withdraw(100);
 		//now account has exactly 2000 bucks , 2nd transaction
-		pulkit.withdraw(1890);
-		System.out.println(pulkit.getBalance());
-		System.out.println(pulkit.firstTime);
+		ac1.withdraw(1890);
+		System.out.println(ac1.getBalance());
+		System.out.println(ac1.firstTime);
 		
 
 	}
