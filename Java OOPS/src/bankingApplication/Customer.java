@@ -11,16 +11,16 @@ public class Customer {
         account = ac;
 	}
 	
-	public void getName(){
-		
+	public String getName(){
+		return name;
 	}
 	
-    public void getAccount(){
-		
+    public Account getAccount(){
+		return this.account;
 	}
 
     public void display(){
 	
-    	System.out.println("Name: " + name + "");
+    	System.out.println("Name: " + this.name + "Account NUmber: " + account.getBalance() + " " + account.getAccountNumber());
 }
 }

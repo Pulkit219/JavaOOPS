@@ -6,6 +6,9 @@ private	double balance =0;
 private	String  accountNumber ;
 public boolean firstTime =true;
 
+
+
+
 	
 public Account(String accnum, double bal){
 	if(bal>=100)
@@ -56,6 +59,12 @@ public void withdraw(double sum){
 	}
 		
 	}
+
+
+
+public String getAccountNumber(){
+	return this.accountNumber;
+}
 
 public double getBalance(){
 	return this.balance;
