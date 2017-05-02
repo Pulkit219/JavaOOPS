@@ -26,6 +26,9 @@ public static int getTransactionFees(){
 	
 }
 
+public Customer[] getCustomer(){
+	 return customers;
+}
 
 	
 	
