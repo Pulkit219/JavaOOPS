@@ -13,7 +13,7 @@ public class Main {
 		
 		ac1.withdraw(100);
 		//now account has exactly 2000 bucks , 2nd transaction
-		ac1.withdraw(1890);
+		ac1.withdraw(1900);
 		System.out.println(ac1.getBalance());
 		System.out.println(ac1.firstTime);
 		

@@ -36,7 +36,7 @@ this.accountNumber =accnum;
 	}
 	
 public void withdraw(double sum){
-	if(sum <= this.balance -(100 + Bank.transactionFees)){
+	if(sum <= this.balance -(100 + Bank.getTransactionFees())){
 		
 		if(firstTime){
 			this.balance-= sum;
@@ -46,7 +46,7 @@ public void withdraw(double sum){
 		
 		
 		else{
-			this.balance-=(sum + Bank.transactionFees);
+			this.balance-=(sum + Bank.getTransactionFees());
 			System.out.println(sum + "withdrwan success, transaction fees charged");
 			
 		}
