@@ -1,8 +1,8 @@
 package bankingApplication;
 
 public class Bank {
-double 	interestRate =8.5;
-double transactionFees= 10;
+	static double 	interestRate =8.5;
+static double   transactionFees= 10;
 Customer[] customers;
 
 public void calculateInterest(){
