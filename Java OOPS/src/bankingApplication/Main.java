@@ -23,6 +23,9 @@ public class Main {
 			System.out.println("6: Exit");
 			int choice = Integer.parseInt(bufferedreader.readLine());
 			
+			
+			
+			
 			switch(choice)
 			{
 			case 1:
@@ -44,6 +47,9 @@ public class Main {
 //				}
 				
 				break;
+				
+				
+				
 				
 			
 			case 2:
@@ -79,6 +85,10 @@ public class Main {
 				break;
 				
 				
+				
+				
+				
+				
 			case 3:
 				
 				
@@ -111,6 +121,10 @@ public class Main {
 					}
 				}
 				break;
+				
+				
+				
+				
 				
 				
 			case 4:
@@ -148,8 +162,40 @@ public class Main {
 				
 				
 				
+				
+				
 			case 5:
+				
+				System.err.println("Enter the account number");
+				acc = bufferedreader.readLine();
+				
+				if(numberOfCustomers == 0)
+				{
+					System.err.println("Please add cutomers");
+				}
+				
+				else
+				{
+				
+					for(int i =0;i<numberOfCustomers; i++)
+					{
+						Account temp = c[i].getAccount();
+						String accTemp = temp.getAccountNumber();
+						if(accTemp.equals(acc))
+						{
+							bank.calculateInterest(c[i]);
+							
+						}
+						else
+						{
+							System.err.println("Account not found");
+						}
+					}
+				}
 				break;
+				
+				
+				
 				
 				
 			case 6:

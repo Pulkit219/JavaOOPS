@@ -13,7 +13,7 @@ public void calculateInterest(Customer customer)
 	double bal = a.getBalance();
 	double interestAmount = bal*interestRate/100;
 	double totalBalance = bal + interestAmount;
-	System.out.println("the interest amount:" + interestAmount + "toatl money after adding int:" + totalBalance );
+	System.out.println("the interest amount: " + interestAmount + " total money after adding int: 	" + totalBalance );
 	
 }
 
