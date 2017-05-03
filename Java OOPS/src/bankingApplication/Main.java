@@ -82,12 +82,12 @@ public class Main {
 			case 3:
 				
 				
-				System.out.println("Enter the account number");
+				System.err.println("Enter the account number");
 				acc = bufferedreader.readLine();
 				
 				if(numberOfCustomers == 0)
 				{
-					System.out.println("Please add cutomers");
+					System.err.println("Please add cutomers");
 				}
 				
 				else
@@ -114,7 +114,38 @@ public class Main {
 				
 				
 			case 4:
+				
+				System.err.println("Enter the account number");
+				acc = bufferedreader.readLine();
+				
+				if(numberOfCustomers == 0)
+				{
+					System.err.println("Please add cutomers");
+				}
+				
+				else
+				{
+				
+					for(int i =0;i<numberOfCustomers; i++)
+					{
+						Account temp = c[i].getAccount();
+						String accTemp = temp.getAccountNumber();
+						if(accTemp.equals(acc))
+						{
+							System.err.println(" balance : " +  temp.getBalance());
+							
+							
+						}
+						else
+						{
+							System.err.println("Account not found");
+						}
+					}
+				}
+				
 				break;
+				
+				
 				
 				
 			case 5:
