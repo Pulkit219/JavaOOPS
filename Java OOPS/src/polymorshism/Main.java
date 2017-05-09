@@ -8,16 +8,20 @@ public class Main {
 		Student s1 = new Student();
 		
 	
-		Person p2 = new Student();
+		
+		//dynamic polymorphism 
+		Person p2 = new Student(); //student methods will called
+		
+		p2.move();
 		
 		
-		
-		
-		//illegal paramaeters
+		//illegal paramaters
 //		
 //		Student s3 = new Person();
 //		
-		
+		System.out.println(p1 instanceof Person);
+		System.out.println(p2 instanceof Person);
+		System.out.println(p2 instanceof Student);
 
 	}
 
