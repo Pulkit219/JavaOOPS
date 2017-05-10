@@ -33,6 +33,15 @@ public class Main {
         
         
         }
+        
+        if(blogReader!= null)
+        {
+        	blogReader.readFromBlog();
+        }
+        else
+        {
+        	System.out.println("valid choice was not enetred");
+        }
 	}
 
 }
