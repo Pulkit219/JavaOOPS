@@ -10,4 +10,7 @@ public abstract void print();
 * other classes must inherit
 *method from the super class must have an empty body for the abstract method
 
+
+AN object cannot be created of the this class because this is incomplete method
+The abstract classes are useful when you want to force other class to follow some sequence/protocols
 */
