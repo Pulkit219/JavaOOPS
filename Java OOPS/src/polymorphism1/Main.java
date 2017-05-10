@@ -40,7 +40,7 @@ public class Main {
         }
         else
         {
-        	System.out.println("valid choice was not enetred");
+        	System.out.println("invalid choice was not enetred");
         }
 	}
 
