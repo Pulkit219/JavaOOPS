@@ -37,6 +37,11 @@ public class Practice {
 			  try {
 			     System.out.println("ENTER A NUMBER: ");
 			     int n = input.nextInt();
+			     for(int i=1; i<=n ; i++)
+					    {				    	System.out.println("hello");
+					    	
+				    }
+			     
 			     break;
 			 }catch(InputMismatchException e) {
 			   System.out.println("ERROR!!!");
